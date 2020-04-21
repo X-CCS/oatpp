@@ -1,0 +1,3 @@
+/home/changshu/URunResearchPrototypeCode/myRepo/mytest/build/CMakeFiles/rebuild_cache.dir
+/home/changshu/URunResearchPrototypeCode/myRepo/mytest/build/CMakeFiles/edit_cache.dir
+/home/changshu/URunResearchPrototypeCode/myRepo/mytest/build/CMakeFiles/Trunk.dir

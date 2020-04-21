@@ -1,0 +1,89 @@
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/changshu/URunResearchPrototypeCode/myRepo/oatpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_337fd/fast && /usr/bin/make  -f CMakeFiles/cmTC_337fd.dir/build.make CMakeFiles/cmTC_337fd.dir/build
+make[1]: Entering directory '/home/changshu/URunResearchPrototypeCode/myRepo/oatpp/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake: /home/jianlong/home/ali_c++/NlsSdkCpp2.0/lib/linux/libcrypto.so.1.0.0: no version information available (required by /usr/local/bin/cmake)
+/usr/local/bin/cmake: /home/jianlong/home/ali_c++/NlsSdkCpp2.0/lib/linux/libssl.so.1.0.0: no version information available (required by /usr/local/bin/cmake)
+/usr/local/bin/cmake: /home/jianlong/home/ali_c++/NlsSdkCpp2.0/lib/linux/libssl.so.1.0.0: no version information available (required by /usr/local/bin/cmake)
+/usr/local/bin/cmake: /home/jianlong/home/ali_c++/NlsSdkCpp2.0/lib/linux/libssl.so.1.0.0: no version information available (required by /usr/local/bin/cmake)
+Building CXX object CMakeFiles/cmTC_337fd.dir/src.cxx.o
+/usr/bin/c++    -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_337fd.dir/src.cxx.o -c /home/changshu/URunResearchPrototypeCode/myRepo/oatpp/build/CMakeFiles/CMakeTmp/src.cxx
+/usr/local/bin/cmake: /home/jianlong/home/ali_c++/NlsSdkCpp2.0/lib/linux/libcrypto.so.1.0.0: no version information available (required by /usr/local/bin/cmake)
+/usr/local/bin/cmake: /home/jianlong/home/ali_c++/NlsSdkCpp2.0/lib/linux/libssl.so.1.0.0: no version information available (required by /usr/local/bin/cmake)
+/usr/local/bin/cmake: /home/jianlong/home/ali_c++/NlsSdkCpp2.0/lib/linux/libssl.so.1.0.0: no version information available (required by /usr/local/bin/cmake)
+/usr/local/bin/cmake: /home/jianlong/home/ali_c++/NlsSdkCpp2.0/lib/linux/libssl.so.1.0.0: no version information available (required by /usr/local/bin/cmake)
+Linking CXX executable cmTC_337fd
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_337fd.dir/link.txt --verbose=1
+/usr/local/bin/cmake: /home/jianlong/home/ali_c++/NlsSdkCpp2.0/lib/linux/libcrypto.so.1.0.0: no version information available (required by /usr/local/bin/cmake)
+/usr/local/bin/cmake: /home/jianlong/home/ali_c++/NlsSdkCpp2.0/lib/linux/libssl.so.1.0.0: no version information available (required by /usr/local/bin/cmake)
+/usr/local/bin/cmake: /home/jianlong/home/ali_c++/NlsSdkCpp2.0/lib/linux/libssl.so.1.0.0: no version information available (required by /usr/local/bin/cmake)
+/usr/local/bin/cmake: /home/jianlong/home/ali_c++/NlsSdkCpp2.0/lib/linux/libssl.so.1.0.0: no version information available (required by /usr/local/bin/cmake)
+/usr/bin/c++   -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_337fd.dir/src.cxx.o  -o cmTC_337fd 
+CMakeFiles/cmTC_337fd.dir/src.cxx.o：在函数‘main’中：
+src.cxx:(.text+0x3c)：对‘pthread_create’未定义的引用
+src.cxx:(.text+0x48)：对‘pthread_detach’未定义的引用
+src.cxx:(.text+0x54)：对‘pthread_cancel’未定义的引用
+src.cxx:(.text+0x65)：对‘pthread_join’未定义的引用
+src.cxx:(.text+0x79)：对‘pthread_atfork’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_337fd.dir/build.make:106: recipe for target 'cmTC_337fd' failed
+make[1]: *** [cmTC_337fd] Error 1
+make[1]: Leaving directory '/home/changshu/URunResearchPrototypeCode/myRepo/oatpp/build/CMakeFiles/CMakeTmp'
+Makefile:141: recipe for target 'cmTC_337fd/fast' failed
+make: *** [cmTC_337fd/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/changshu/URunResearchPrototypeCode/myRepo/oatpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_86d0a/fast && /usr/bin/make  -f CMakeFiles/cmTC_86d0a.dir/build.make CMakeFiles/cmTC_86d0a.dir/build
+make[1]: Entering directory '/home/changshu/URunResearchPrototypeCode/myRepo/oatpp/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake: /home/jianlong/home/ali_c++/NlsSdkCpp2.0/lib/linux/libcrypto.so.1.0.0: no version information available (required by /usr/local/bin/cmake)
+/usr/local/bin/cmake: /home/jianlong/home/ali_c++/NlsSdkCpp2.0/lib/linux/libssl.so.1.0.0: no version information available (required by /usr/local/bin/cmake)
+/usr/local/bin/cmake: /home/jianlong/home/ali_c++/NlsSdkCpp2.0/lib/linux/libssl.so.1.0.0: no version information available (required by /usr/local/bin/cmake)
+/usr/local/bin/cmake: /home/jianlong/home/ali_c++/NlsSdkCpp2.0/lib/linux/libssl.so.1.0.0: no version information available (required by /usr/local/bin/cmake)
+Building CXX object CMakeFiles/cmTC_86d0a.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_86d0a.dir/CheckFunctionExists.cxx.o -c /home/changshu/URunResearchPrototypeCode/myRepo/oatpp/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+/usr/local/bin/cmake: /home/jianlong/home/ali_c++/NlsSdkCpp2.0/lib/linux/libcrypto.so.1.0.0: no version information available (required by /usr/local/bin/cmake)
+/usr/local/bin/cmake: /home/jianlong/home/ali_c++/NlsSdkCpp2.0/lib/linux/libssl.so.1.0.0: no version information available (required by /usr/local/bin/cmake)
+/usr/local/bin/cmake: /home/jianlong/home/ali_c++/NlsSdkCpp2.0/lib/linux/libssl.so.1.0.0: no version information available (required by /usr/local/bin/cmake)
+/usr/local/bin/cmake: /home/jianlong/home/ali_c++/NlsSdkCpp2.0/lib/linux/libssl.so.1.0.0: no version information available (required by /usr/local/bin/cmake)
+Linking CXX executable cmTC_86d0a
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_86d0a.dir/link.txt --verbose=1
+/usr/local/bin/cmake: /home/jianlong/home/ali_c++/NlsSdkCpp2.0/lib/linux/libcrypto.so.1.0.0: no version information available (required by /usr/local/bin/cmake)
+/usr/local/bin/cmake: /home/jianlong/home/ali_c++/NlsSdkCpp2.0/lib/linux/libssl.so.1.0.0: no version information available (required by /usr/local/bin/cmake)
+/usr/local/bin/cmake: /home/jianlong/home/ali_c++/NlsSdkCpp2.0/lib/linux/libssl.so.1.0.0: no version information available (required by /usr/local/bin/cmake)
+/usr/local/bin/cmake: /home/jianlong/home/ali_c++/NlsSdkCpp2.0/lib/linux/libssl.so.1.0.0: no version information available (required by /usr/local/bin/cmake)
+/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_86d0a.dir/CheckFunctionExists.cxx.o  -o cmTC_86d0a  -lpthreads 
+/usr/bin/ld: 找不到 -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_86d0a.dir/build.make:106: recipe for target 'cmTC_86d0a' failed
+make[1]: *** [cmTC_86d0a] Error 1
+make[1]: Leaving directory '/home/changshu/URunResearchPrototypeCode/myRepo/oatpp/build/CMakeFiles/CMakeTmp'
+Makefile:141: recipe for target 'cmTC_86d0a/fast' failed
+make: *** [cmTC_86d0a/fast] Error 2
+
+
+

@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/changshu/URunResearchPrototypeCode/myRepo/mytest/main.cpp
+oatpp/parser/json/mapping/ObjectMapper.hpp
+-
+oatpp/web/server/HttpConnectionHandler.hpp
+-
+oatpp/network/server/Server.hpp
+-
+oatpp/network/server/SimpleTCPConnectionProvider.hpp
+-
+oatpp/core/macro/codegen.hpp
+-
+

@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/changshu/URunResearchPrototypeCode/myRepo/mytest/cmake-3.17.1/Tests/RunCMake/print_stdin.c
+stdio.h
+-
+
